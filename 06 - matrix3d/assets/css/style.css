@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(247, 247, 247);
+
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    perspective: 300px;
+    perspective-origin: top;
+    transform-style: preserve-3d;
+    /*Da o efeito como se um elemento atravessa o outro*/
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    position: absolute;
+    background: linear-gradient(90deg, #FC4668 0%, #3F5EFB 100%);
+    transform: matrix3d(-1.9, 0.017, 0, 0,
+            -0.017, 1.198, -0.052, -0.005,
+            0, 0.052, -2.696, 0,
+            5, 0, 0, 1)
+}
+
+/* ramlmn.github.io/visualizing-matrix3d/ */

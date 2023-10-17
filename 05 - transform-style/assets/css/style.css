@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(247, 247, 247);
+
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    perspective: 300px;
+    perspective-origin: top;
+    transform-style: preserve-3d; /*Da o efeito como se um elemento atravessa o outro*/
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    position: absolute;
+}
+
+.box:nth-child(1) {
+    background: linear-gradient(90deg, #FC4668 0%, #3F5EFB 100%);
+    transform: rotateY(40deg);
+}
+
+.box:nth-child(2) {
+    background: linear-gradient(90deg, #FC4668 0%, #e27324 100%);
+    transform: rotateY(-40deg);
+}
+
